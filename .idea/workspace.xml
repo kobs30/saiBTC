@@ -5,39 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22075098-90c0-4263-9276-3b23dd06b60c" name="Default Changelist" comment=".">
-      <change beforePath="$PROJECT_DIR$/.idea/BTC_SignValidator.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/saiBTC.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/go.sum" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sai-btc.log" beforeDir="false" afterPath="$PROJECT_DIR$/sai-btc.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtc.config" beforeDir="false" afterPath="$PROJECT_DIR$/saibtc.config" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/addr.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/addr.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/bech32/bech32.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/bech32/bech32.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/bech32/segwit.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/bech32/segwit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/const.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/const.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/ecdsa.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/ecdsa.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/funcs.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/funcs.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/hash.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/hash.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/key.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/key.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/uint256.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/uint256.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/btc/wallet.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/btc/wallet.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/others/bech32/bech32.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/others/bech32/bech32.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/others/bech32/segwit.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/others/bech32/segwit.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/saibtcgo.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/saibtcgo.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/COPYING" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/COPYING" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/ec.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/ec.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/field.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/field.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/num.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/num.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/secp256k1.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/secp256k1.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/sig.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/sig.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/xy.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/xy.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/xyz.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/xyz.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/z_consts.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/z_consts.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/saibtcgo/secp256k1/z_init.go" beforeDir="false" afterPath="$PROJECT_DIR$/saibtcgo/secp256k1/z_init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/saibtc.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deploy/docker-compose.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,33 +53,50 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/deploy" />
       <recent name="$PROJECT_DIR$/saibtcgo" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/saibtcgo" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="saiBTC" />
-      <working_directory value="$PROJECT_DIR$" />
-      <EXTENSION ID="net.ashald.envfile">
-        <option name="IS_ENABLED" value="false" />
-        <option name="IS_SUBST" value="false" />
-        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
-        <option name="IS_IGNORE_MISSING_FILES" value="false" />
-        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
-        <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
-        </ENTRIES>
-      </EXTENSION>
-      <kind value="FILE" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/main.go" />
+  <component name="RunManager" selected="Makefile Target.deploy-dev">
+    <configuration name="build-bin" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/deploy/Makefile" target="build-bin" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="build" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/deploy/Makefile" target="build" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy-dev" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/deploy/Makefile" target="deploy-dev" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="deploy_1" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/deploy/Makefile" target="deploy_1" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
+      <method v="2" />
+    </configuration>
+    <configuration name="prepare" type="MAKEFILE_TARGET_RUN_CONFIGURATION" factoryName="Makefile" temporary="true">
+      <makefile filename="$PROJECT_DIR$/deploy/Makefile" target="prepare" workingDirectory="" arguments="">
+        <envs />
+      </makefile>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build main.go" />
+        <item itemvalue="Makefile Target.deploy-dev" />
+        <item itemvalue="Makefile Target.deploy_1" />
+        <item itemvalue="Makefile Target.prepare" />
+        <item itemvalue="Makefile Target.build" />
+        <item itemvalue="Makefile Target.build-bin" />
       </list>
     </recent_temporary>
   </component>
