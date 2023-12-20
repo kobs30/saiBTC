@@ -82,7 +82,7 @@ func SignMessage(message string, privatekey string) (string, error) {
 	hash = make([]byte, 32)
 	btc.HashFromMessage(msg, hash)
 
-	btcsig := new(btc.string)
+	btcsig := new(btc.Signature)
 	var sb [65]byte
 	sb[0] = 27
 	if signkey.IsCompressed() {

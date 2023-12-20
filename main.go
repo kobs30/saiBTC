@@ -15,6 +15,47 @@ import (
 	"github.com/tkanos/gonfig"
 )
 
+func main() {
+	config_err := gonfig.GetConf("saibtc.config", &btcvalidatorconfig)
+	if config_err != nil {
+		fmt.Println("Config missed!! ")
+		panic(config_err)
+	}
+	fmt.Println(btcvalidatorconfig)
+	srv := &http.Server{
+		Addr: btcvalidatorconfig.Host + ":" + btcvalidatorconfig.Port,
+	}
+	http.HandleFunc("/", api)
+	if err := srv.ListenAndServe(); err != nil {
+		panic(err)
+	}
+	//
+	//
+	//
+	// mess := "This is an example of a signed message."
+	//
+	// btcKey, err := saibtcgo.GenerateKeyPair()
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
+	// btcKey.Dump()
+	//
+	// signature, err := saibtcgo.SignMessage(mess, btcKey.Private)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
+	// fmt.Println(signature)
+	// valid, err := saibtcgo.VerifySignature(mess, "H9PPoeUtFOli2NwDDgPz2IMRbEhyZ5ngbRrRhsgeOq83CeMmH7tmXCHUmuX6rj0THQPjsMd2K6mBQl6XL8gdAAM=", "1MRBqNJZ5eBQw531YYFYCtp86TMcQQRzYN")
+	// // valid, err := saibtcgo.VerifySignature(mess, signature, btcKey.Address)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// 	return
+	// }
+	// fmt.Println(valid)
+}
+
 func setupResponse(w *http.ResponseWriter, req *http.Request) {
 	(*w).Header().Set("Access-Control-Allow-Origin", "*")
 	(*w).Header().Set("Access-Control-Allow-Methods", "POST, GET, OPTIONS, PUT, DELETE")
@@ -172,45 +213,4 @@ func decrypt(encryptedString string, keyString string) (decryptedString string) 
 	}
 
 	return fmt.Sprintf("%s", plaintext)
-}
-
-func main() {
-	config_err := gonfig.GetConf("saibtc.config", &btcvalidatorconfig)
-	if config_err != nil {
-		fmt.Println("Config missed!! ")
-		panic(config_err)
-	}
-	fmt.Println(btcvalidatorconfig)
-	srv := &http.Server{
-		Addr: btcvalidatorconfig.Host + ":" + btcvalidatorconfig.Port,
-	}
-	http.HandleFunc("/", api)
-	if err := srv.ListenAndServe(); err != nil {
-		panic(err)
-	}
-	//
-	//
-	//
-	// mess := "This is an example of a signed message."
-	//
-	// btcKey, err := saibtcgo.GenerateKeyPair()
-	// if err != nil {
-	// 	fmt.Println(err)
-	// 	return
-	// }
-	// btcKey.Dump()
-	//
-	// signature, err := saibtcgo.SignMessage(mess, btcKey.Private)
-	// if err != nil {
-	// 	fmt.Println(err)
-	// 	return
-	// }
-	// fmt.Println(signature)
-	// valid, err := saibtcgo.VerifySignature(mess, "H9PPoeUtFOli2NwDDgPz2IMRbEhyZ5ngbRrRhsgeOq83CeMmH7tmXCHUmuX6rj0THQPjsMd2K6mBQl6XL8gdAAM=", "1MRBqNJZ5eBQw531YYFYCtp86TMcQQRzYN")
-	// // valid, err := saibtcgo.VerifySignature(mess, signature, btcKey.Address)
-	// if err != nil {
-	// 	fmt.Println(err)
-	// 	return
-	// }
-	// fmt.Println(valid)
 }

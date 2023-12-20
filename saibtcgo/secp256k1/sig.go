@@ -6,16 +6,16 @@ import (
 	"fmt"
 )
 
-type string struct {
+type Signature struct {
 	R, S Number
 }
 
-func (s *string) Print(lab string) {
+func (s *Signature) Print(lab string) {
 	fmt.Println(lab+".R:", hex.EncodeToString(s.R.Bytes()))
 	fmt.Println(lab+".S:", hex.EncodeToString(s.S.Bytes()))
 }
 
-func (r *string) ParseBytes(sig []byte) int {
+func (r *Signature) ParseBytes(sig []byte) int {
 	if len(sig) < 5 || sig[0] != 0x30 {
 		return -1
 	}
@@ -35,13 +35,13 @@ func (r *string) ParseBytes(sig []byte) int {
 	return 6 + lenr + lens
 }
 
-func (r *string) Verify(pubkey *XY, message *Number) (ret bool) {
+func (r *Signature) Verify(pubkey *XY, message *Number) (ret bool) {
 	var r2 Number
 	ret = r.recompute(&r2, pubkey, message) && r.R.Cmp(&r2.Int) == 0
 	return
 }
 
-func (sig *string) recompute(r2 *Number, pubkey *XY, message *Number) (ret bool) {
+func (sig *Signature) recompute(r2 *Number, pubkey *XY, message *Number) (ret bool) {
 	var sn, u1, u2 Number
 
 	sn.mod_inv(&sig.S, &TheCurve.Order)
@@ -66,7 +66,7 @@ func (sig *string) recompute(r2 *Number, pubkey *XY, message *Number) (ret bool)
 	return
 }
 
-func (sig *string) recover(pubkey *XY, m *Number, recid int) (ret bool) {
+func (sig *Signature) recover(pubkey *XY, m *Number, recid int) (ret bool) {
 	var rx, rn, u1, u2 Number
 	var fx Field
 	var X XY
@@ -98,7 +98,7 @@ func (sig *string) recover(pubkey *XY, m *Number, recid int) (ret bool) {
 	return true
 }
 
-func (sig *string) Sign(seckey, message, nonce *Number, recid *int) int {
+func (sig *Signature) Sign(seckey, message, nonce *Number, recid *int) int {
 	var r XY
 	var rp XYZ
 	var n Number
@@ -145,7 +145,7 @@ func (sig *string) Sign(seckey, message, nonce *Number, recid *int) int {
 	return 1
 }
 
-func (sig *string) Bytes() []byte {
+func (sig *Signature) Bytes() []byte {
 	r := sig.R.Bytes()
 	if r[0] >= 0x80 {
 		r = append([]byte{0}, r...)

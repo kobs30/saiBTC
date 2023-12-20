@@ -2,7 +2,7 @@ package secp256k1
 
 func ecdsa_verify(pubkey, sig, msg []byte) int {
 	var m Number
-	var s string
+	var s Signature
 	m.SetBytes(msg)
 
 	var q XY
@@ -42,7 +42,7 @@ func DecompressPoint(X []byte, off bool, Y []byte) {
 }
 
 func RecoverPublicKey(r, s, h []byte, recid int, pubkey *XY) bool {
-	var sig string
+	var sig Signature
 	var msg Number
 	sig.R.SetBytes(r)
 	if sig.R.Sign() <= 0 || sig.R.Cmp(&TheCurve.Order.Int) >= 0 {

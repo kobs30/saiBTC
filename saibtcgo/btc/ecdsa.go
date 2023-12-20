@@ -31,7 +31,7 @@ func EcdsaVerify(kd []byte, sd []byte, hash []byte) bool {
 }
 
 func EcdsaSign(priv, hash []byte) (r, s *big.Int, err error) {
-	var sig secp256k1.string
+	var sig secp256k1.Signature
 	var sec, msg, nonce secp256k1.Number
 
 	sec.SetBytes(priv)

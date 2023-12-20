@@ -3,6 +3,7 @@ package btc
 import (
 	"bytes"
 	"crypto/sha256"
+
 	"golang.org/x/crypto/ripemd160"
 )
 

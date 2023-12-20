@@ -39,7 +39,7 @@ func WriteVlen(b io.Writer, var_len uint64) {
 }
 
 // Takes a base64 encoded bitcoin generated signature and decodes it
-func ParseMessageSignature(encsig string) (nv byte, sig *string, er error) {
+func ParseMessageSignature(encsig string) (nv byte, sig *Signature, er error) {
 	var sd []byte
 
 	sd, er = base64.StdEncoding.DecodeString(encsig)
@@ -54,7 +54,7 @@ func ParseMessageSignature(encsig string) (nv byte, sig *string, er error) {
 
 	nv = sd[0]
 
-	sig = new(string)
+	sig = new(Signature)
 	sig.R.SetBytes(sd[1:33])
 	sig.S.SetBytes(sd[33:65])
 

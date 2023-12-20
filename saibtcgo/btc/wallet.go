@@ -25,7 +25,7 @@ func PublicFromPrivate(priv_key []byte, compressed bool) (res []byte) {
 // Verify the secret key's range and if a test message signed with it verifies OK
 // Returns nil if everything looks OK
 func VerifyKeyPair(priv []byte, publ []byte) error {
-	var sig string
+	var sig Signature
 
 	const TestMessage = "Just some test message..."
 	hash := Sha2Sum([]byte(TestMessage))
