@@ -1,28 +1,93 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="22075098-90c0-4263-9276-3b23dd06b60c" name="Default Changelist" comment="" />
+    <list default="true" id="22075098-90c0-4263-9276-3b23dd06b60c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/main" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/saibtc.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/go.mod" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/go.sum" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sai-btc.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/addr.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/bech32/bech32.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/bech32/segwit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/const.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/ecdsa.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/funcs.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/hash.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/key.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/uint256.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/btc/wallet.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/others/bech32/bech32.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/others/bech32/segwit.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/saibtcgo.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/COPYING" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/ec.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/field.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/num.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/secp256k1.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/sig.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/xy.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/xyz.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/z_consts.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/saibtcgo/secp256k1/z_init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btcvalidator" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/btcvalidator.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/saibtc.config" beforeDir="false" afterPath="$PROJECT_DIR$/src/saibtc.config" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file:///usr/lib/go-1.10" />
+  <component name="GOROOT" url="file://$USER_HOME$/go/go1.21.1" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GoLibraries">
+    <option name="indexEntireGoPath" value="true" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1t01SKkARZLbC8ut3StDAIOpYUn" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="go.import.settings.migrated" value="true" />
-    <property name="go.sdk.automatically.set" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../saibtcgo" />
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/kcv/Documents/work/saiBTC"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VgoProject">
+    <integration-enabled>false</integration-enabled>
+    <settings-migrated>true</settings-migrated>
   </component>
 </project>

@@ -1,0 +1,11 @@
+version: '3.9'
+
+services:
+  cry:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - '3005:3005'
+#    network_mode: 'host'
